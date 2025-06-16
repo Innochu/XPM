@@ -1,0 +1,16 @@
+﻿global using Microsoft.AspNetCore.Identity;
+global using XPMTest.Application.Dtos;
+global using XPMTest.Application.Service.Interface;
+global using XPMTest.Domain;
+global using XPMTest.Domain.Entities;
+global using Microsoft.EntityFrameworkCore;
+global using AutoMapper;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Security.Cryptography;
+global using System.Text;
+global using XPMTest.Persistence.Repositories.Interface;
+global using XPMTest.Application.Pagination;
