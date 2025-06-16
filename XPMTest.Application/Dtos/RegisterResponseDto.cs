@@ -8,10 +8,6 @@
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
-        public string Token { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; }
-        public string ProfilePictureUrl { get; set; } = string.Empty;
-        public string WalletNumber { get; set; } = string.Empty;
-        public string PublicId { get; set; } = string.Empty;
     }
 }

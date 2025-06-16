@@ -49,7 +49,6 @@ namespace XPMTest.Application.Service.Implementation
                 var userr = await _userManager.FindByEmailAsync(appUser.Email);
                 if (result.Succeeded)
                 {
-                    var role = await _userManager.AddToRoleAsync(appUser, "User");
 
                     var response = new RegisterResponseDto
                     {
@@ -61,9 +60,9 @@ namespace XPMTest.Application.Service.Implementation
 
                     };
 
-                    return BaseResponse<RegisterResponseDto>.Success("User registered successfully. Please click on the link sent to your email to confirm your account", StatusCodes.Successful, response);
+                    return BaseResponse<RegisterResponseDto>.Success("User registered successfully.", StatusCodes.Successful, response);
                 }
-                return BaseResponse<RegisterResponseDto>.Failure("Unable to create wallet", StatusCodes.FatalError);
+                return BaseResponse<RegisterResponseDto>.Failure("Unable to create user", StatusCodes.FatalError);
 
             }
             catch (Exception ex)
